@@ -1,16 +1,22 @@
 # Faça um programa que leia um número inteiro qualquer e mostre na tela sua tabuada.
+from dataclasses import replace
 
-numero = int(input("Insira um número para ver sua tabuada: "))
-x1 = numero
-x2 = numero * 2
-x3 = numero * 3
-x4 = numero * 4
-x5 = numero * 5
-x6 = numero * 6
-x7 = numero * 7
-x8 = numero * 8
-x9 = numero * 9
-x10 = numero * 10
-print(f"Os resultados são: \n {numero}x1={x1} \n {numero}x2={x2} \n {numero}x3={x3} "
-      f"\n {numero}x4={x4} \n {numero}x5={x5} \n {numero}x6={x6} \n {numero}x7={x7} \n"
-      f" {numero}x8={x8} \n {numero}x9={x9} \n {numero}x10={x10}")
+n = int(input("Digite um número para ver sua tabuada: "))
+print(f"Os resultados são: \n {n} x 1 = {n*1} \n {n} x 2 = {n*2} \n {n} x 3 = {n*3} "
+      f"\n {n} x 4 = {n*4} \n {n} x 5 = {n*5} \n {n} x 6 = {n*6} \n {n} x 7 = {n*7} \n"
+      f" {n} x 8 = {n*8} \n {n} x 9 = {n*9} \n {n} x 10 = {n*10}")
+
+# Jeito que o prof Guanabara fez.
+
+num =  int(input("Digite um número para ver sua tabuada: "))
+print("{} x {} = {}".format(num, 1, num*1))
+print("{} x {} = {}".format(num, 2, num*2))
+print("{} x {} = {}".format(num, 3, num*2))
+print("{} x {} = {}".format(num, 4, num*4))
+print("{} x {} = {}".format(num, 5, num*5))
+print("{} x {} = {}".format(num, 6, num*6))
+print("{} x {} = {}".format(num, 7, num*7))
+print("{} x {} = {}".format(num, 8, num*8))
+print("{} x {} = {}".format(num, 9, num*9))
+print("{} x {} = {}".format(num, 10, num*10))
+print('-'*12)
