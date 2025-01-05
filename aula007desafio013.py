@@ -15,3 +15,10 @@ ns = s + (s * a / 100) # ns = Novo Salário.
 # Faço um print mostrando para a pessoa o salário que ela digitou + o novo salário com o reajuste.
 print(f"O seu salário atual de R${s:.2f} com o reajuste de 15% passa a ser: R${ns:.2f}. Faça bom "
       f"proveito do seu aumento!")
+
+# Jeito que o prof Guanabra fez.
+
+salario = float(input("Qual é o salário do funcionário? R$"))
+novo = salario + (salario * 15 / 100)
+print("Um funcionário que ganhava R${:.2f}, com 15% de aumento, passa a receber R${:.2f}".format(
+      salario, novo))
