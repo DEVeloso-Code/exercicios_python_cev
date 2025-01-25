@@ -18,4 +18,14 @@ print(quantidade_letras_sem_espaco)
 
 quantidade_letras_a = nome.count("a") # Conta a quantidade de letras específicas de um nome.
 
+# Jeito que o prof° Guanabara fez.
+n = str(input("Digite seu nome completo: ")).strip() #Elimina os espaços na contagem.
+print("Analisando seu nome...")
+print("Seu nome em maiúsculas é {}".format(n.upper()))
+print("Seu nome em minúsculas é {}".format(n.lower()))
+print("Seu nome ao todo tem {} letras".format(len(n) - n.count(" ")))
+# print("Seu primeiro nome tem {} letras".format(n.find(" ")))
+separa = n.split()
+print("Seu primeiro nome é {} e ele tem {} letras.".format(separa[0], len(separa[0])))
+
 

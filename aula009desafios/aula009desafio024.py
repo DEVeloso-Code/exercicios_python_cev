@@ -5,3 +5,8 @@ if "Santo" in cidade:
     print("A cidade contém 'Santo'")
 else:
     print("A cidade não contém 'Santo'")
+
+# Jeito que o prof Guanabra fez.
+
+cid = str(input("Em que cidade você nasceu: ")).strip() # Strip elimina os espaços.
+print(cid[:5] == "Santo")

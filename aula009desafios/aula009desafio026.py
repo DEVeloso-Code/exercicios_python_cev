@@ -25,3 +25,14 @@ if localizacao_ultima_A != -1:
     print(f"A letra 'A' aparece pela última vez na localização: {localizacao_ultima_A}")
 if quantidade == 0:
     print("Seu nome não possui letra 'A'!")
+
+
+# Jeito que o prof Guanabara fez
+
+#1)
+frase = str(input("Digite uma frase: ")).upper().strip() #Joga todas as letras para maiúsculo +
+# Tira espaços indesejados.
+print("A letra A aparecer {} vezes na frase".format(frase.count("A")))
+print("A primeira letra A apareceu na posição {}".format(frase.find("A")+1))
+print("A última letra A apareceu na posição {}".format(frase.rfind("A")+1))
+
