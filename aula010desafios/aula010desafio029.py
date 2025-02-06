@@ -12,6 +12,3 @@ else:
     print(f"Seu carro estava a {velocidade}Km/h e por isso não será multado.")
 
 
-
-
-
